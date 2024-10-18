@@ -1,0 +1,15 @@
+/* Import from folder base/ */
+@import './base/_reset.scss';
+
+/* Import from folder utils/ */
+@import './utils/_mixins.scss';
+@import './utils/_variables.scss';
+
+/* Import from folder components/ */
+@import './components/_header.scss';
+
+/* Impoort from folder layout/ */
+@import './layout/_flex.scss';
+
+/* Import from folder pages/ */
+@import './pages/_home.scss';

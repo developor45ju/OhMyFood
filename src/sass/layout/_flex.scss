@@ -1,0 +1,45 @@
+.header,
+.location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fonctionnary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__wrap {
+        display: flex;
+        justify-content: end;
+    }
+    &__items {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &::before {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__title-step {
+        align-self: flex-end;
+    }
+}

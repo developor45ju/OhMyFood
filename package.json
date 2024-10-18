@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch ./sass/style.scss ./css/style.css --style compressed",
-    "prefixer": "postcss ./css/style.css --use autoprefixer --dir ./css --watch"
+    "sass": "sass --watch ./src/sass/style.scss ./public/css/style.css --style compressed",
+    "prefixer": "postcss ./public/css/style.css --use autoprefixer --dir ./public/css/ --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browerlist": "last 4 versions",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",

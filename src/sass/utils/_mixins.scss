@@ -1,0 +1,14 @@
+@mixin button($width: 219px) {
+    height: 50px;
+    width: $width;
+    border-radius: 25px;
+    border: none;
+    background: $color-buttonGradient;
+    font-family: $font-secondary;
+    font-weight: $weight-medium;
+    font-size: 16px;
+    color: $color-white;
+    text-align: center;
+    box-shadow: $shadow-button;
+    cursor: pointer;
+}

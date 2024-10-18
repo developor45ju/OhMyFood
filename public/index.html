@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header class="header">
@@ -23,32 +23,34 @@
             <label class="location__label" for="location">
                 <i class="fa-solid fa-location-dot location__icon"></i>
             </label>
-            <input class="location__input" type="text" name="lacation" id="location" placeholder="Paris, Bellville" />
+            <input class="location__input" type="text" name="lacation" id="location" value="Paris, Bellville" />
         </form>
     </div>
 
     <section class="hero">
-        <h1 class="hero__title--primary">Réservez le menu qui vous convient</h1>
-        <p class="hero__subtitle--primary">Découvrez des restaurants d'exception, séléctionnés par bos soins</p>
-        <button class="btn btn--primary" type="button">Explorer nos restaurants</button>
+        <h1 class="hero__title hero__title--primary">Réservez le menu qui vous convient</h1>
+        <p class="hero__subtitle hero__subtitle--primary">Découvrez des restaurants d'exception, séléctionnés par bos soins</p>
+        <button class="hero__btn hero__btn--primary" type="button">Explorer nos restaurants</button>
     </section>
 
     <section class="fonctionnary">
-        <h2 class="fonctionnary__title--secondary">Fonctionnement</h2>
-        <ol class="fonctionnary__items">
-            <li class="fonctionnary__item">
-                <i class="fa-solid fa-mobile-screen-button fonctionnary__icon"></i>
-                <p class="fonctionnar__title--secondary">Choissisez un restaurant</p>
-            </li>
-            <li class="fonctionnary__item">
-                <i class="fa-solid fa-list-ul fonctionnary__icon"></i>
-                <p class="fonctionnary__title--secondary">Composez votre menu</p>
-            </li>
-            <li class="fonctionnary__item">
-                <i class="fa-solid fa-store fonctionnary__icon"></i>
-                <p class="fonctionnary___title--secondary">Dégustez au restaurant</p>
-            </li>
-        </ol>
+        <h2 class="fonctionnary__title">Fonctionnement</h2>
+        <div class="fonctionnary__wrap">
+            <ol class="fonctionnary__items">
+                <li class="fonctionnary__item">
+                    <i class="fa-solid fa-mobile-screen-button fonctionnary__icon"></i>
+                    <p class="fonctionnary__title-step">Choissisez un restaurant</p>
+                </li>
+                <li class="fonctionnary__item">
+                    <i class="fa-solid fa-list-ul fonctionnary__icon"></i>
+                    <p class="fonctionnary__title-step">Composez votre menu</p>
+                </li>
+                <li class="fonctionnary__item">
+                    <i class="fa-solid fa-store fonctionnary__icon"></i>
+                    <p class="fonctionnary__title-step">Dégustez au restaurant</p>
+                </li>
+            </ol>
+        </div>
     </section>
 
     <main class="main">
