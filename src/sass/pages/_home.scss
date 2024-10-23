@@ -166,37 +166,82 @@
 
     &__icon {
         position: relative;
+        height: 32px;
+        width: 32px;
 
-        i {
+        i, .card__icon--between {
             position: absolute;
-            right: 0;
             top: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        &--disabled {
-            opacity: 1;
-            z-index: 1;
+            right: 0;
         }
 
         &--enabled {
-            opacity: 0;
-            z-index: 0;
             background: $color-buttonGradient;
             background-clip: text;
             color: transparent;
         }
 
-        &:hover {
-            .card__icon--disabled {
-                opacity: 0;
-                z-index: 0;
+        &--between {
+            height: 100%;
+            width: 100%;
+            background-color: $color-green;
+        }
+        
+        @keyframes fadeIn {
+            10% {
+                border-bottom-right-radius: 15px;
+                border-bottom-left-radius: 25px;
+                height: 90%;
             }
-
-            .card__icon--enabled {
-                opacity: 1;
-                z-index: 1;
+            20% {
+                border-bottom-right-radius: 50x;
+                border-bottom-left-radius: 30px;
+                height: 80%;
             }
+            30% {
+                border-bottom-right-radius: 60px;
+                border-bottom-left-radius: 100px;
+                height: 70%;
+            }
+            40% {
+                border-bottom-right-radius: 200px;
+                border-bottom-left-radius: 120px;
+                height: 60%;
+            }
+            50% {
+                border-bottom-right-radius: 240px;
+                border-bottom-left-radius: 400px;
+                height: 50%;
+            }
+            60% {
+                border-bottom-right-radius: 800px;
+                border-bottom-left-radius: 480px;
+                height: 40%;
+            }
+            70% {
+                border-bottom-right-radius: 960px;
+                border-bottom-left-radius: 1600px;
+                height: 30%;
+            }
+            80% {
+                border-bottom-right-radius: 3200px;
+                border-bottom-left-radius: 1920px;
+                height: 20%;
+            }
+            90% {
+                border-bottom-right-radius: 3840px;
+                border-bottom-left-radius: 3200px;
+                height: 10%;
+            }
+            100% {
+                border-bottom-right-radius: 4000px;
+                border-bottom-left-radius: 4000px;
+                height: 0%;
+            }
+        }
+        
+        &:hover .card__icon--between {
+            animation: fadeIn 1s ease-in-out forwards;
         }
     }
 }

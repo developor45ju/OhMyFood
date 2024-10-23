@@ -1,0 +1,23 @@
+// This loop applies a staggered animation to the first three items with the class 'fonctionnary__item'.
+// Each item will fade in with a delay that increases by 0.3 seconds for each subsequent item.
+
+@for $f from 1 through 3 {
+    .fonctionnary__item:nth-child(#{$f}) {
+        animation: fadeIn 0.5s ease-in-out #{$f * 0.3}s both;
+    }
+}
+
+@for $c from 1 through 4 {
+    .wrapper__card:nth-child(#{$c}) {
+        animation: fadeIn 0.5s ease-in-out #{$c * 0.3}s both;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

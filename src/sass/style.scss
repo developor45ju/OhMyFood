@@ -3,9 +3,11 @@
 
 /* Import from folder utils/ */
 @import './utils/_mixins.scss';
+@import './utils/_animations.scss';
 @import './utils/_variables.scss';
 
 /* Import from folder components/ */
+@import './components/_footer.scss';
 @import './components/_header.scss';
 
 /* Impoort from folder layout/ */

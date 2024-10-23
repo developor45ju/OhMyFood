@@ -64,3 +64,8 @@
         align-items: flex-start;
     }
 }
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+}

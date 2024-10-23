@@ -1,0 +1,22 @@
+.footer {
+    background-color: $color-grey;
+    padding: 1em;
+
+    &__logo {
+        width: 9em;
+        filter: invert(1);
+    }
+}
+
+.info {
+    &__items {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+
+.item__link {
+    text-decoration: none;
+    color: $color-white;
+    font-family: 'Roboto', sans-serif;
+}
