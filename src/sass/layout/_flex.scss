@@ -32,6 +32,10 @@
         align-items: center;
         gap: 1rem;
 
+        &:hover .fonctionnary__icon {
+            color: $color-primary;
+        }
+
         &::before {
             display: flex;
             justify-content: center;
@@ -45,6 +49,12 @@
 }
 
 .main__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container__cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -68,4 +78,43 @@
 footer {
     display: flex;
     flex-direction: column-reverse;
+
+    .item__link {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .fonctionnary__items {
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            gap: 1.5rem;
+    }
+    .container__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .info__items {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .fonctionnary__items {
+        justify-content: stretch;
+        flex-wrap: nowrap;
+    }
 }

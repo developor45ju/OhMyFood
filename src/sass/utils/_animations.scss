@@ -3,21 +3,50 @@
 
 @for $f from 1 through 3 {
     .fonctionnary__item:nth-child(#{$f}) {
-        animation: fadeIn 0.5s ease-in-out #{$f * 0.3}s both;
+        animation: fadeInEffect 0.5s ease-in-out #{2 * 0.3}s both;
     }
 }
 
 @for $c from 1 through 4 {
     .wrapper__card:nth-child(#{$c}) {
-        animation: fadeIn 0.5s ease-in-out #{$c * 0.3}s both;
+        animation: fadeInEffect 0.5s ease-in-out #{2 * 0.3}s both;
     }
 }
 
-@keyframes fadeIn {
+@for $lc from 1 through 3 {
+    .loader__comma:nth-child(#{$lc}) {
+        animation: loading-comma 0.3s ease-out #{$lc * 0.3}s both;
+    }
+}
+
+.loader {
+    animation: fadeOut 0.3s ease-in-out 0.5s both;
+}
+
+@keyframes fadeInEffect {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes loading-comma {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        display: none;
     }
 }

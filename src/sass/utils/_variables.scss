@@ -1,4 +1,4 @@
-/* Colors */
+/* Color */
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-green: #99E2D0;
@@ -17,7 +17,7 @@ $shadow-card: 0 4px 15px rgba(0, 0, 0, 0.10);
 $shadow-button: 0 4px 10px rgba(0, 0, 0, 0.25);
 $shadow-instructions: 0 4px 15px rgba(0, 0, 0, 0.15);
 
-/* Fonts */
+/* Font */
 $font-primary: 'Shrikhand', sans-serif;
 $font-secondary: 'Roboto', sans-serif;
 
@@ -25,3 +25,7 @@ $font-secondary: 'Roboto', sans-serif;
 $weight-light: 300;
 $weight-medium: 500;
 $weight-bold: 700;
+
+/* Breakpoint */
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;

@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
+    <div class="loader">
+        <p class="loader__text loader__text--running">Chargement en cours<span class="loader__comma">.</span><span class="loader__comma">.</span><span class="loader__comma">.</span></p>
+    </div>
+
     <header class="header">
         <a href="#" class="homepage__link">
             <img class="header__logo" src="./assets/img/logo/ohmyfood@2x.svg" alt="Logo du service" />
@@ -56,69 +60,71 @@
     <main class="main">
         <section class="main__cards">
             <h2 class="main__title">Restaurants</h2>
-            <a class="wrapper__card" href="#">
-                <article class="card">
-                    <p class="card--new">Nouveau</p>
-                    <img src="./assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img" />
-                    <div class="card__wrap">
-                        <div class="card__content">
-                            <h3 class="card__title">La palette du goût</h3>
-                            <p class="card__subtitle">Ménilmontant</p>
+            <div class="container__cards">
+                <a class="wrapper__card" href="#">
+                    <article class="card">
+                        <p class="card--new">Nouveau</p>
+                        <img src="./assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img" />
+                        <div class="card__wrap">
+                            <div class="card__content">
+                                <h3 class="card__title">La palette du goût</h3>
+                                <p class="card__subtitle">Ménilmontant</p>
+                            </div>
+                            <div class="card__icon">
+                                <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
+                                <span class="card__icon--between"></span>
+                                <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
+                            </div>
                         </div>
-                        <div class="card__icon">
-                            <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
-                            <span class="card__icon--between"></span>
-                            <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
+                    </article>
+                </a><a class="wrapper__card" href="#">
+                    <article class="card">
+                        <p class="card--new">Nouveau</p>
+                        <img src="./assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img" />
+                        <div class="card__wrap">
+                            <div class="card__content">
+                                <h3 class="card__title">La note enchantée</h3>
+                                <p class="card__subtitle">Charonne</p>
+                            </div>
+                            <div class="card__icon">
+                                <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
+                                <span class="card__icon--between"></span>
+                                <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </a><a class="wrapper__card" href="#">
-                <article class="card">
-                    <p class="card--new">Nouveau</p>
-                    <img src="./assets/img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img" />
-                    <div class="card__wrap">
-                        <div class="card__content">
-                            <h3 class="card__title">La note enchantée</h3>
-                            <p class="card__subtitle">Charonne</p>
+                    </article>
+                </a><a class="wrapper__card" href="#">
+                    <article class="card">
+                        <img src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img" />
+                        <div class="card__wrap">
+                            <div class="card__content">
+                                <h3 class="card__title">À la française</h3>
+                                <p class="card__subtitle">Cité rouge</p>
+                            </div>
+                            <div class="card__icon">
+                                <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
+                                <span class="card__icon--between"></span>
+                                <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
+                            </div>
                         </div>
-                        <div class="card__icon">
-                            <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
-                            <span class="card__icon--between"></span>
-                            <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
+                    </article>
+                </a><a class="wrapper__card" href="#">
+                    <article class="card">
+                        <img src="./assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img">
+                        <div class="card__wrap">
+                            <div class="card__content">
+                                <h3 class="card__title">Le délice des sens</h3>
+                                <p class="card__subtitle">Folie-Méricourt</p>
+                            </div>
+                            <div class="card__icon">
+                                <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
+                                <span class="card__icon--between"></span>
+                                <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
+                            </div>
                         </div>
-                    </div>
-                </article>
-            </a><a class="wrapper__card" href="#">
-                <article class="card">
-                    <img src="./assets/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img" />
-                    <div class="card__wrap">
-                        <div class="card__content">
-                            <h3 class="card__title">À la française</h3>
-                            <p class="card__subtitle">Cité rouge</p>
-                        </div>
-                        <div class="card__icon">
-                            <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
-                            <span class="card__icon--between"></span>
-                            <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
-                        </div>
-                    </div>
-                </article>
-            </a><a class="wrapper__card" href="#">
-                <article class="card">
-                    <img src="./assets/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image d'un restaurant gastronomique" class="card__img">
-                    <div class="card__wrap">
-                        <div class="card__content">
-                            <h3 class="card__title">Le délice des sens</h3>
-                            <p class="card__subtitle">Folie-Méricourt</p>
-                        </div>
-                        <div class="card__icon">
-                            <i class="fa-solid fa-heart fa-2x card__icon--enabled"></i>
-                            <span class="card__icon--between"></span>
-                            <i class="fa-regular fa-heart fa-2x card__icon--disabled"></i>
-                        </div>
-                    </div>
-                </article>
-            </a>
+                    </article>
+                </a>
+            </div>
         </section>
     </main>
 
